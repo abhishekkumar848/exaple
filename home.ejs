@@ -3,98 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel Booking</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
 </head>
-<body>
+<body class="bg-gray-100">
     <div class="bg-background text-foreground p-6">
         <header class="flex justify-between items-center mb-8">
-          <h1 class="text-4xl font-bold">Welcome to Hotel</h1>
-          <a href="#" class="bg-primary text-primary-foreground px-4 py-2 rounded-lg">Book Now</a>
+            <h1 class="text-4xl font-bold ">Welcome User</h1>
+            <div class="flex items-center bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500
+            ">
+              <img src="./noun.png" class="w-[30px] h-[24px]"/>
+              <button id="chatButton" class="bg-primary text-primary-foreground px-4 py-2 rounded-lg">AI Chat</button>
+            </div>
+            
         </header>
-      
-        <section class="relative mb-12">
-          <img src="https://placehold.co/1200x400" alt="Hotel Background" class="w-full rounded-lg" />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow-lg">
-              <input type="text" placeholder="Search Hotels" class="border border-zinc-300 rounded-lg p-2 mr-2" />
-              <input type="date" class="border border-zinc-300 rounded-lg p-2 mr-2" />
-              <input type="date" class="border border-zinc-300 rounded-lg p-2 mr-2" />
-              <input type="number" placeholder="Rooms & Guests" class="border border-zinc-300 rounded-lg p-2 mr-2" />
-              <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-lg">Book Now</button>
-            </div>
-          </div>
+
+        <section class="relative mb-12 shadow-2xl shadow-gray-900">
+            <img src="https://placehold.co/1200x400" alt="Hotel Background" class="w-full rounded-lg" />
         </section>
-      
+
         <section class="mb-12">
-          <h2 class="text-2xl font-bold mb-4">Recommended Hotels</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="border rounded-lg overflow-hidden">
-              <img src="https://placehold.co/400x250" alt="Holiday Heights" class="w-full" />
-              <div class="p-4">
-                <h3 class="font-semibold">Holiday Heights</h3>
-                <p class="text-muted-foreground">$850</p>
-              </div>
+            <h2 class="text-2xl font-bold mb-4">Recommended Hotels</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 " >
+                <div class="border rounded-lg overflow-hidden shadow-2xl shadow-gray-900 rounded">
+                    <img src="https://placehold.co/400x250" alt="Holiday Heights" class="w-full" />
+                    <div class="p-4">
+                        <h3 class="font-semibold">Holiday Heights</h3>
+                        <p class="text-muted-foreground">$850</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-2xl shadow-gray-900 rounded">
+                    <img src="https://placehold.co/400x250" alt="Hilltop Resort" class="w-full" />
+                    <div class="p-4">
+                        <h3 class="font-semibold">Hilltop Resort</h3>
+                        <p class="text-muted-foreground">$800</p>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden shadow-2xl shadow-gray-900 rounded">
+                    <img src="https://placehold.co/400x250" alt="Hotel Sea View" class="w-full" />
+                    <div class="p-4">
+                        <h3 class="font-semibold">Hotel Sea View</h3>
+                        <p class="text-muted-foreground">$850</p>
+                    </div>
+                </div>
             </div>
-            <div class="border rounded-lg overflow-hidden">
-              <img src="https://placehold.co/400x250" alt="Hilltop Resort" class="w-full" />
-              <div class="p-4">
-                <h3 class="font-semibold">Hilltop Resort</h3>
-                <p class="text-muted-foreground">$800</p>
-              </div>
-            </div>
-            <div class="border rounded-lg overflow-hidden">
-              <img src="https://placehold.co/400x250" alt="Hotel Sea View" class="w-full" />
-              <div class="p-4">
-                <h3 class="font-semibold">Hotel Sea View</h3>
-                <p class="text-muted-foreground">$850</p>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="text-primary">See All</a>
+            <a href="#" class="text-primary">See All</a>
         </section>
-      
+
         <section>
-          <h2 class="text-2xl font-bold mb-4">Our Services</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="flex items-start">
-              <div class="mr-4">
-                <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
-              </div>
-              <div>
-                <h3 class="font-semibold">High Speed Wifi</h3>
-                <p class="text-muted-foreground">The fast internet guaranteed for your happy stay.</p>
-              </div>
+            <h2 class="text-2xl font-bold mb-4">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex items-start">
+                    <div class="mr-4">
+                        <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">High Speed Wifi</h3>
+                        <p class="text-muted-foreground">The fast internet guaranteed for your happy stay.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="mr-4">
+                        <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Luxurious Interior</h3>
+                        <p class="text-muted-foreground">The luxurious designed rooms for your happy days.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="mr-4">
+                        <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Health & Fitness</h3>
+                        <p class="text-muted-foreground">The best facilities designed for your happy days.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="mr-4">
+                        <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">Pickup & Drop</h3>
+                        <p class="text-muted-foreground">We provide transportation for your happy days.</p>
+                    </div>
+                </div>
             </div>
-            <div class="flex items-start">
-              <div class="mr-4">
-                <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
-              </div>
-              <div>
-                <h3 class="font-semibold">Luxurious Interior</h3>
-                <p class="text-muted-foreground">The luxurious designed rooms for your happy days.</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="mr-4">
-                <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
-              </div>
-              <div>
-                <h3 class="font-semibold">Health & Fitness</h3>
-                <p class="text-muted-foreground">The best facilities designed for your happy days.</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="mr-4">
-                <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
-              </div>
-              <div>
-                <h3 class="font-semibold">Pickup & Drop</h3>
-                <p class="text-muted-foreground">We provide transportation for your happy days.</p>
-              </div>
-            </div>
-          </div>
         </section>
+    </div>
+
+    <!-- AI Assist Modal -->
+ <!-- AI Assist Modal -->
+<!-- AI Assist Modal (Hidden Initially) -->
+<div id="chatModal" class="fixed inset-0 flex items-center justify-center bg-white hidden">
+  <div class="bg-card rounded-lg shadow-lg p-6 max-w-md mx-auto relative w-full md:w-[400px]">
+      <button id="closeChat" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">&times;</button>
+      <h2 class="text-lg font-semibold text-primary text-center">AI Assist</h2>
+      
+      <div class="flex justify-center mt-4">
+          <div class="w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+              <div class="w-10 h-10 bg-green-500 rounded-full"></div>
+          </div>
       </div>
+      
+      <p class="text-center text-muted-foreground mt-4">How can I assist you today?</p>
+
+      <!-- Scrollable Chat Area -->
+      <div id="chatContainer" class="mt-4 flex flex-col space-y-2 h-[50vh] overflow-y-auto p-2 border border-gray-300 rounded-lg">
+          <!-- Example Messages -->
+          <div class="flex justify-start">
+              <div class="bg-gray-200 text-gray-900 px-4 py-2 rounded-lg max-w-[80%]">Hello! How can I help you?</div>
+          </div>
+          <div class="flex justify-end">
+              <div class="bg-blue-500 text-white px-4 py-2 rounded-lg max-w-[80%]">Tell me about James.</div>
+          </div>
+          <div class="flex justify-start">
+              <div class="bg-gray-200 text-gray-900 px-4 py-2 rounded-lg max-w-[80%]">James is an expert in AI training...</div>
+          </div>
+      </div>
+
+      <!-- Input Field -->
+      <div class="mt-6 flex items-center">
+          <input type="text" placeholder="Type a message..." class="border border-border rounded-lg p-2 w-full" id="chatInput"/>
+          <button id="sendMessage" class="ml-2 bg-blue-500 text-white px-4 py-2 rounded-lg">Send</button>
+      </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('chatButton').addEventListener('click', function() {
+      document.getElementById('chatModal').classList.remove('hidden');
+  });
+
+  document.getElementById('closeChat').addEventListener('click', function() {
+      document.getElementById('chatModal').classList.add('hidden');
+  });
+
+  document.getElementById('sendMessage').addEventListener('click', sendMessage);
+  document.getElementById('chatInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') sendMessage();
+  });
+
+  function sendMessage() {
+      const input = document.getElementById('chatInput');
+      const message = input.value.trim();
+      if (!message) return;
+
+      const chatContainer = document.getElementById('chatContainer');
+
+      // Add sender's message
+      const senderMessage = document.createElement('div');
+      senderMessage.classList.add('flex', 'justify-end');
+      senderMessage.innerHTML = `<div class="bg-blue-500 text-white px-4 py-2 rounded-lg max-w-[80%]">${message}</div>`;
+      chatContainer.appendChild(senderMessage);
+
+      // Auto-reply from AI (example)
+      setTimeout(() => {
+          const botMessage = document.createElement('div');
+          botMessage.classList.add('flex', 'justify-start');
+          botMessage.innerHTML = `<div class="bg-gray-200 text-gray-900 px-4 py-2 rounded-lg max-w-[80%]">I'm here to help!</div>`;
+          chatContainer.appendChild(botMessage);
+          chatContainer.scrollTop = chatContainer.scrollHeight; // Auto-scroll
+      }, 1000);
+
+      input.value = '';
+      chatContainer.scrollTop = chatContainer.scrollHeight; // Auto-scroll
+  }
+</script>
+
+
 </body>
 </html>
