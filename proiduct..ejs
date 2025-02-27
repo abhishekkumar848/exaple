@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 142.1 76.2% 36.3%;
+--primary-foreground: 355.7 100% 97.3%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 142.1 76.2% 36.3%;
+				}
+				.dark {
+					--background: 20 14.3% 4.1%;
+--foreground: 0 0% 95%;
+--popover: 0 0% 9%;
+--popover-foreground: 0 0% 95%;
+--card: 24 9.8% 10%;
+--card-foreground: 0 0% 95%;
+--primary: 142.1 70.6% 45.3%;
+--primary-foreground: 144.9 80.4% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 0 0% 15%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 12 6.5% 15.1%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 85.7% 97.3%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 142.4 71.8% 29.2%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    
+
+<div class="container mx-auto p-4">
+  <h1 class="text-4xl font-bold mb-4">Get Inspired</h1>
+  <p class="text-lg text-muted-foreground mb-8">
+    Browsing for your next long-haul trip, everyday journey, or just fancy a look at what's new? From community favourites to about-to-sell-out items, see them all here.
+  </p>
+
+  <div class="flex flex-wrap mb-6">
+    <select class="border border-border rounded-md p-2 mr-4">
+      <option>All Categories</option>
+    </select>
+    <select class="border border-border rounded-md p-2 mr-4">
+      <option>All Colors</option>
+    </select>
+    <select class="border border-border rounded-md p-2 mr-4">
+      <option>All Features</option>
+    </select>
+    <select class="border border-border rounded-md p-2 mr-4">
+      <option>From €0 - €1000</option>
+    </select>
+    <select class="border border-border rounded-md p-2">
+      <option>Sort by New In</option>
+    </select>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div class="border border-border rounded-lg p-4">
+      <img src="https://placehold.co/300x300" alt="Shibuya Totepack" class="w-full h-48 object-cover mb-2" />
+      <h2 class="text-xl font-semibold">Shibuya Totepack</h2>
+      <p class="text-muted-foreground">Recycled PET Rip Stop</p>
+      <p class="font-bold">€140.00</p>
+    </div>
+    <div class="border border-border rounded-lg p-4">
+      <img src="https://placehold.co/300x300" alt="SoFo Backpack City" class="w-full h-48 object-cover mb-2" />
+      <h2 class="text-xl font-semibold">SoFo Backpack City</h2>
+      <p class="text-muted-foreground">Recycled Coated Cotton Canvas</p>
+      <p class="font-bold">€280.00</p>
+    </div>
+    <div class="border border-border rounded-lg p-4">
+      <img src="https://placehold.co/300x300" alt="Gion Backpack Pro" class="w-full h-48 object-cover mb-2" />
+      <h2 class="text-xl font-semibold">Gion Backpack Pro</h2>
+      <p class="text-muted-foreground">Waterproof Tarpaulin</p>
+      <p class="font-bold">€140.00</p>
+    </div>
+    <div class="border border-border rounded-lg p-4">
+      <img src="https://placehold.co/300x300" alt="SoFo Rolltop Backpack X" class="w-full h-48 object-cover mb-2" />
+      <h2 class="text-xl font-semibold">SoFo Rolltop Backpack X</h2>
+      <p class="text-muted-foreground">Recycled Coated Cotton Canvas</p>
+      <p class="font-bold">€170.00</p>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>
+</body>
+</html>

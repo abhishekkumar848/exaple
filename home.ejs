@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-background text-foreground p-6">
+        <header class="flex justify-between items-center mb-8">
+          <h1 class="text-4xl font-bold">Welcome to Hotel</h1>
+          <a href="#" class="bg-primary text-primary-foreground px-4 py-2 rounded-lg">Book Now</a>
+        </header>
+      
+        <section class="relative mb-12">
+          <img src="https://placehold.co/1200x400" alt="Hotel Background" class="w-full rounded-lg" />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-white bg-opacity-80 p-4 rounded-lg shadow-lg">
+              <input type="text" placeholder="Search Hotels" class="border border-zinc-300 rounded-lg p-2 mr-2" />
+              <input type="date" class="border border-zinc-300 rounded-lg p-2 mr-2" />
+              <input type="date" class="border border-zinc-300 rounded-lg p-2 mr-2" />
+              <input type="number" placeholder="Rooms & Guests" class="border border-zinc-300 rounded-lg p-2 mr-2" />
+              <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-lg">Book Now</button>
+            </div>
+          </div>
+        </section>
+      
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold mb-4">Recommended Hotels</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="border rounded-lg overflow-hidden">
+              <img src="https://placehold.co/400x250" alt="Holiday Heights" class="w-full" />
+              <div class="p-4">
+                <h3 class="font-semibold">Holiday Heights</h3>
+                <p class="text-muted-foreground">$850</p>
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <img src="https://placehold.co/400x250" alt="Hilltop Resort" class="w-full" />
+              <div class="p-4">
+                <h3 class="font-semibold">Hilltop Resort</h3>
+                <p class="text-muted-foreground">$800</p>
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <img src="https://placehold.co/400x250" alt="Hotel Sea View" class="w-full" />
+              <div class="p-4">
+                <h3 class="font-semibold">Hotel Sea View</h3>
+                <p class="text-muted-foreground">$850</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="text-primary">See All</a>
+        </section>
+      
+        <section>
+          <h2 class="text-2xl font-bold mb-4">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex items-start">
+              <div class="mr-4">
+                <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
+              </div>
+              <div>
+                <h3 class="font-semibold">High Speed Wifi</h3>
+                <p class="text-muted-foreground">The fast internet guaranteed for your happy stay.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-4">
+                <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
+              </div>
+              <div>
+                <h3 class="font-semibold">Luxurious Interior</h3>
+                <p class="text-muted-foreground">The luxurious designed rooms for your happy days.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-4">
+                <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
+              </div>
+              <div>
+                <h3 class="font-semibold">Health & Fitness</h3>
+                <p class="text-muted-foreground">The best facilities designed for your happy days.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="mr-4">
+                <img src="https://placehold.co/100x100" alt="Service Icon" class="w-16 h-16" />
+              </div>
+              <div>
+                <h3 class="font-semibold">Pickup & Drop</h3>
+                <p class="text-muted-foreground">We provide transportation for your happy days.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+</body>
+</html>
