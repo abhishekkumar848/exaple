@@ -1,184 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
-		<script type="text/javascript">
-			window.tailwind.config = {
-				darkMode: ['class'],
-				theme: {
-					extend: {
-						colors: {
-							border: 'hsl(var(--border))',
-							input: 'hsl(var(--input))',
-							ring: 'hsl(var(--ring))',
-							background: 'hsl(var(--background))',
-							foreground: 'hsl(var(--foreground))',
-							primary: {
-								DEFAULT: 'hsl(var(--primary))',
-								foreground: 'hsl(var(--primary-foreground))'
-							},
-							secondary: {
-								DEFAULT: 'hsl(var(--secondary))',
-								foreground: 'hsl(var(--secondary-foreground))'
-							},
-							destructive: {
-								DEFAULT: 'hsl(var(--destructive))',
-								foreground: 'hsl(var(--destructive-foreground))'
-							},
-							muted: {
-								DEFAULT: 'hsl(var(--muted))',
-								foreground: 'hsl(var(--muted-foreground))'
-							},
-							accent: {
-								DEFAULT: 'hsl(var(--accent))',
-								foreground: 'hsl(var(--accent-foreground))'
-							},
-							popover: {
-								DEFAULT: 'hsl(var(--popover))',
-								foreground: 'hsl(var(--popover-foreground))'
-							},
-							card: {
-								DEFAULT: 'hsl(var(--card))',
-								foreground: 'hsl(var(--card-foreground))'
-							},
-						},
-					}
-				}
-			}
-		</script>
-		<style type="text/tailwindcss">
-			@layer base {
-				:root {
-					--background: 0 0% 100%;
---foreground: 222.2 84% 4.9%;
---card: 0 0% 100%;
---card-foreground: 222.2 84% 4.9%;
---popover: 0 0% 100%;
---popover-foreground: 222.2 84% 4.9%;
---primary: 221.2 83.2% 53.3%;
---primary-foreground: 210 40% 98%;
---secondary: 210 40% 96.1%;
---secondary-foreground: 222.2 47.4% 11.2%;
---muted: 210 40% 96.1%;
---muted-foreground: 215.4 16.3% 46.9%;
---accent: 210 40% 96.1%;
---accent-foreground: 222.2 47.4% 11.2%;
---destructive: 0 84.2% 60.2%;
---destructive-foreground: 210 40% 98%;
---border: 214.3 31.8% 91.4%;
---input: 214.3 31.8% 91.4%;
---ring: 221.2 83.2% 53.3%;
-				}
-				.dark {
-					--background: 222.2 84% 4.9%;
---foreground: 210 40% 98%;
---card: 222.2 84% 4.9%;
---card-foreground: 210 40% 98%;
---popover: 222.2 84% 4.9%;
---popover-foreground: 210 40% 98%;
---primary: 217.2 91.2% 59.8%;
---primary-foreground: 222.2 47.4% 11.2%;
---secondary: 217.2 32.6% 17.5%;
---secondary-foreground: 210 40% 98%;
---muted: 217.2 32.6% 17.5%;
---muted-foreground: 215 20.2% 65.1%;
---accent: 217.2 32.6% 17.5%;
---accent-foreground: 210 40% 98%;
---destructive: 0 62.8% 30.6%;
---destructive-foreground: 210 40% 98%;
---border: 217.2 32.6% 17.5%;
---input: 217.2 32.6% 17.5%;
---ring: 224.3 76.3% 48%;
-				}
-			}
-		</style>
   </head>
   <body>
-    <div class="bg-background p-6">
-  <div class="flex justify-between items-center mb-6">
-    <h1 class="text-2xl font-bold">Impowering</h1>
-    <div>
-      <button class="bg-primary text-primary-foreground px-4 py-2 rounded">Create Course</button>
-    </div>
-  </div>
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+        <script
+          src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js"
+          defer
+          init
+        ></script>
+        <script type="text/javascript">
+          window.tailwind.config = {
+            darkMode: ["class"],
+            theme: {
+              extend: {
+                colors: {
+                  border: "hsl(var(--border))",
+                  input: "hsl(var(--input))",
+                  ring: "hsl(var(--ring))",
+                  background: "hsl(var(--background))",
+                  foreground: "hsl(var(--foreground))",
+                  primary: {
+                    DEFAULT: "hsl(var(--primary))",
+                    foreground: "hsl(var(--primary-foreground))",
+                  },
+                  secondary: {
+                    DEFAULT: "hsl(var(--secondary))",
+                    foreground: "hsl(var(--secondary-foreground))",
+                  },
+                  destructive: {
+                    DEFAULT: "hsl(var(--destructive))",
+                    foreground: "hsl(var(--destructive-foreground))",
+                  },
+                  muted: {
+                    DEFAULT: "hsl(var(--muted))",
+                    foreground: "hsl(var(--muted-foreground))",
+                  },
+                  accent: {
+                    DEFAULT: "hsl(var(--accent))",
+                    foreground: "hsl(var(--accent-foreground))",
+                  },
+                  popover: {
+                    DEFAULT: "hsl(var(--popover))",
+                    foreground: "hsl(var(--popover-foreground))",
+                  },
+                  card: {
+                    DEFAULT: "hsl(var(--card))",
+                    foreground: "hsl(var(--card-foreground))",
+                  },
+                },
+              },
+            },
+          };
+        </script>
+        <style type="text/tailwindcss">
+          @layer base {
+            :root {
+              --background: 0 0% 100%;
+              --foreground: 222.2 84% 4.9%;
+              --card: 0 0% 100%;
+              --card-foreground: 222.2 84% 4.9%;
+              --popover: 0 0% 100%;
+              --popover-foreground: 222.2 84% 4.9%;
+              --primary: 221.2 83.2% 53.3%;
+              --primary-foreground: 210 40% 98%;
+              --secondary: 210 40% 96.1%;
+              --secondary-foreground: 222.2 47.4% 11.2%;
+              --muted: 210 40% 96.1%;
+              --muted-foreground: 215.4 16.3% 46.9%;
+              --accent: 210 40% 96.1%;
+              --accent-foreground: 222.2 47.4% 11.2%;
+              --destructive: 0 84.2% 60.2%;
+              --destructive-foreground: 210 40% 98%;
+              --border: 214.3 31.8% 91.4%;
+              --input: 214.3 31.8% 91.4%;
+              --ring: 221.2 83.2% 53.3%;
+            }
+            .dark {
+              --background: 222.2 84% 4.9%;
+              --foreground: 210 40% 98%;
+              --card: 222.2 84% 4.9%;
+              --card-foreground: 210 40% 98%;
+              --popover: 222.2 84% 4.9%;
+              --popover-foreground: 210 40% 98%;
+              --primary: 217.2 91.2% 59.8%;
+              --primary-foreground: 222.2 47.4% 11.2%;
+              --secondary: 217.2 32.6% 17.5%;
+              --secondary-foreground: 210 40% 98%;
+              --muted: 217.2 32.6% 17.5%;
+              --muted-foreground: 215 20.2% 65.1%;
+              --accent: 217.2 32.6% 17.5%;
+              --accent-foreground: 210 40% 98%;
+              --destructive: 0 62.8% 30.6%;
+              --destructive-foreground: 210 40% 98%;
+              --border: 217.2 32.6% 17.5%;
+              --input: 217.2 32.6% 17.5%;
+              --ring: 224.3 76.3% 48%;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="bg-background p-6 shadow-lg">
+          <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold">Profile</h1>
+            <div>
+              <button
+                class="bg-primary text-primary-foreground px-4 py-2 rounded"
+              >
+                Create Course
+              </button>
+            </div>
+          </div>
 
-  <div class="bg-white shadow-md rounded-lg p-6">
-    <div class="flex items-center mb-4">
-      <img src="https://placehold.co/100x100" alt="Profile Picture" class="rounded-full mr-4" />
-      <div>
-        <h2 class="text-xl font-semibold">Alexandre Naud</h2>
-        <p class="text-muted-foreground">Member since Aug 23, 2023 · New York, USA</p>
-      </div>
-    </div>
+          <div class="bg-white shadow-lg p-6 border border-2 rounded-[35px]">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://placehold.co/100x100"
+                alt="Profile Picture"
+                class="rounded-full mr-4"
+              />
+              <div>
+                <h2 class="text-xl font-semibold">Alexandre Naud</h2>
+                <p class="text-muted-foreground">
+                  Member since Aug 23, 2023 · New York, USA
+                </p>
+              </div>
+            </div>
 
-    <div class="grid grid-cols-3 gap-4 mb-6">
-      <div class="text-center">
-        <h3 class="text-lg font-semibold">120</h3>
-        <p class="text-muted-foreground">Courses enrolled</p>
-      </div>
-      <div class="text-center">
-        <h3 class="text-lg font-semibold">2.8k</h3>
-        <p class="text-muted-foreground">Hours spent learning</p>
-      </div>
-      <div class="text-center">
-        <h3 class="text-lg font-semibold">26</h3>
-        <p class="text-muted-foreground">Tasks completed</p>
-      </div>
-    </div>
+            <div class="grid grid-cols-3 gap-4 mb-6">
+              <div class="text-center">
+                <h3 class="text-lg font-semibold">120</h3>
+                <p class="text-muted-foreground">Courses enrolled</p>
+              </div>
+              <div class="text-center">
+                <h3 class="text-lg font-semibold">2.8k</h3>
+                <p class="text-muted-foreground">Hours spent learning</p>
+              </div>
+              <div class="text-center">
+                <h3 class="text-lg font-semibold">26</h3>
+                <p class="text-muted-foreground">Tasks completed</p>
+              </div>
+            </div>
+            <div class="border border-t-1 p-6 rounded-[35px] shadow-[rgba(0,_0,_0,_0.25)_0px_54px_55px,_rgba(0,_0,_0,_0.12)_0px_-12px_30px,_rgba(0,_0,_0,_0.12)_0px_4px_6px,_rgba(0,_0,_0,_0.17)_0px_12px_13px,_rgba(0,_0,_0,_0.09)_0px_-3px_5px]">
+             <div class="flex flex-col gap-3">
+              <h3 class="text-xl font-semibold mb-2">Courses enrolled</h3>
+              <div class="space-y-2">
+                <div class="border-b pb-2">
+                  <h4 class="font-semibold">Welcome Orientation</h4>
+                  <p class="text-muted-foreground">2 lessons • 8min</p>
+                </div>
+                <div class="border-b pb-2">
+                  <h4 class="font-semibold">
+                    Basic Financials - Overview and Startup Plan
+                  </h4>
+                  <p class="text-muted-foreground">8 lessons • 33min</p>
+                </div>
+                <div class="border-b pb-2">
+                  <h4 class="font-semibold">
+                    Basic Financials - Forecast Sales & Expenses
+                  </h4>
+                  <p class="text-muted-foreground">3 lessons • 8min</p>
+                </div>
+                <div class="border-b pb-2">
+                  <h4 class="font-semibold">Cash and Taxes</h4>
+                  <p class="text-muted-foreground">2 lessons • 8min</p>
+                </div>
+                <div class="border-b pb-2">
+                  <h4 class="font-semibold">Next Steps</h4>
+                  <p class="text-muted-foreground">2 lessons • 8min</p>
+                </div>
+                <div class="border-b pb-2">
+                  <h4 class="font-semibold">Optional Downloads</h4>
+                  <p class="text-muted-foreground">2 lessons • 8min</p>
+                </div>
+              </div>
+             </div>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-xl font-semibold mt-6 mb-2">Tasks assigned</h3>
+                <div class="space-y-2">
+                  <div class="border-b pb-2">
+                    <h4 class="font-semibold">Welcome Orientation</h4>
+                    <p class="text-muted-foreground">
+                      Due Aug 28, 2023 • 2 lessons • 8min
+                    </p>
+                  </div>
+                  <div class="border-b pb-2">
+                    <h4 class="font-semibold">
+                      Basic Financials - Overview and Startup Plan
+                    </h4>
+                    <p class="text-muted-foreground">
+                      Due Aug 28, 2023 • 8 lessons • 33min
+                    </p>
+                  </div>
+                </div>
+               </div>
+            </div>
 
-    <h3 class="text-xl font-semibold mb-2">Courses enrolled</h3>
-    <div class="space-y-2">
-      <div class="border-b pb-2">
-        <h4 class="font-semibold">Welcome Orientation</h4>
-        <p class="text-muted-foreground">2 lessons • 8min</p>
-      </div>
-      <div class="border-b pb-2">
-        <h4 class="font-semibold">Basic Financials - Overview and Startup Plan</h4>
-        <p class="text-muted-foreground">8 lessons • 33min</p>
-      </div>
-      <div class="border-b pb-2">
-        <h4 class="font-semibold">Basic Financials - Forecast Sales & Expenses</h4>
-        <p class="text-muted-foreground">3 lessons • 8min</p>
-      </div>
-      <div class="border-b pb-2">
-        <h4 class="font-semibold">Cash and Taxes</h4>
-        <p class="text-muted-foreground">2 lessons • 8min</p>
-      </div>
-      <div class="border-b pb-2">
-        <h4 class="font-semibold">Next Steps</h4>
-        <p class="text-muted-foreground">2 lessons • 8min</p>
-      </div>
-      <div class="border-b pb-2">
-        <h4 class="font-semibold">Optional Downloads</h4>
-        <p class="text-muted-foreground">2 lessons • 8min</p>
-      </div>
-    </div>
-
-    <h3 class="text-xl font-semibold mt-6 mb-2">Tasks assigned</h3>
-    <div class="space-y-2">
-      <div class="border-b pb-2">
-        <h4 class="font-semibold">Welcome Orientation</h4>
-        <p class="text-muted-foreground">Due Aug 28, 2023 • 2 lessons • 8min</p>
-      </div>
-      <div class="border-b pb-2">
-        <h4 class="font-semibold">Basic Financials - Overview and Startup Plan</h4>
-        <p class="text-muted-foreground">Due Aug 28, 2023 • 8 lessons • 33min</p>
-      </div>
-    </div>
-  </div>
-</div>
+         
+          </div>
+        </div>
+      </body>
+    </html>
   </body>
-</html>
-</body>
 </html>
