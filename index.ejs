@@ -1,0 +1,33 @@
+async function sendMessage() {
+    const input = document.getElementById("chatInput");
+    const message = input.value.trim();
+    if (!message) return;
+
+    const chatContainer = document.getElementById("chatContainer");
+
+    // Add sender's message
+    const senderMessage = document.createElement("div");
+    senderMessage.classList.add("flex", "justify-end");
+    senderMessage.innerHTML = `<div class="bg-blue-500 text-white px-4 py-2 rounded-lg max-w-[80%]">${message}</div>`;
+    chatContainer.appendChild(senderMessage);
+
+    input.value = "";
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+
+    try {
+        const response = await fetch("http://localhost:3000/api/chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message }),
+        });
+
+        const data = await response.json();
+        const botMessage = document.createElement("div");
+        botMessage.classList.add("flex", "justify-start");
+        botMessage.innerHTML = `<div class="bg-gray-200 text-gray-900 px-4 py-2 rounded-lg max-w-[80%]">${data.reply}</div>`;
+        chatContainer.appendChild(botMessage);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    } catch (error) {
+        console.error("Error sending message:", error);
+    }
+}
